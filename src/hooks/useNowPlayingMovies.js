@@ -16,7 +16,7 @@ const useNowPlayingMovies = () =>{
 
     useEffect(()=>{
         getNowPlayingMovies();
-    },[]);
+    },[dispatch]);
 
     // This API is called twice every times due to the "React.StrictMode" that is written in "index.js" file.
     // React does extra rendering of your components to check some inconsistencies between your calls.
