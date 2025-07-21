@@ -41,7 +41,7 @@ const useMovieTrailer = (movieId) => {
     useEffect(() => {
         if (!movieId) return; // Prevent fetch if movieId is undefined or null
         getMovieVideos();
-    }, [movieId, dispatch]);
+    }, [getMovieVideos]);
 };
 
 export default useMovieTrailer;
