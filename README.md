@@ -18,6 +18,18 @@
 - Bug Fix:- If the user is not logged in redirect  /browse to Login Page and vice versa
 - Fetch from TMDB movies
 - Unsubscribed to the onAuthStateChanged callback
+- Registered TMDB API and get access token
+- Get Data from TMDB " now playing movies list" API`
+- Make the custom hook naming useNowPlayingMovies
+- Structure of Browse page
+    {
+        MainContainer
+            - Video Background
+            - Video Title
+        Secondary Container
+            - MovieList* n
+            - cards * n
+    }
 
 # Features
 -Login/Sign up
