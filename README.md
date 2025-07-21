@@ -22,14 +22,17 @@
 - Get Data from TMDB " now playing movies list" API`
 - Make the custom hook naming useNowPlayingMovies
 - Structure of Browse page
-    {
-        MainContainer
+    
+        - MainContainer
             - Video Background
+                - Video Background Fetched 
+                - CSS added
             - Video Title
-        Secondary Container
+                - Title added and styled
+        - Secondary Container
             - MovieList* n
             - cards * n
-    }
+    
 
 # Features
 - Login/Sign up
