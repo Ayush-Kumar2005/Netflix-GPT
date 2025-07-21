@@ -59,7 +59,7 @@ const Header = () => {
         </div>
       )}
 
-      <div className="fixed top-0 left-0 w-screen flex justify-between items-center px-10 py-4 bg-transparent z-10">
+      <div className="fixed top-0 left-0 w-screen flex justify-between items-center px-10 py-4 bg-transparent z-10 ">
         <div className="w-44">
           <img
             className="w-full"

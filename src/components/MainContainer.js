@@ -4,11 +4,19 @@ import VideoBackground from "./VideoBackground";
 
 const MainContainer = () =>{
 
-    const movies = useSelector(store => store.movies?.nowPlayingMovies)
+    const movies = useSelector(store => store.movies?.nowPlayingMovies);
+    if(movies===null) return;
+
+    const mainMovie = movies[0];
+    // console.log(mainMovie);
+    //This will cause error because first time , before the store is executed my nowPlayingmovie is null...
+    // that is why it is creating issue.
+
+const {original_title , overview ,id} = mainMovie;
     return(
         <div>
-            <VideoTitle/>
-            <VideoBackground/>
+            <VideoTitle title={original_title} overview={overview}/>
+            <VideoBackground movieID={id}/>
         </div>
     )
 };

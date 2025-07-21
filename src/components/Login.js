@@ -47,9 +47,7 @@ const Login = () => {
           console.log("Signed in:", data);
           // navigate("/browse");
         }
-      } 
-      
-      else {
+      } else {
         const { data, error } = await supabase.auth.signUp({
           email: emailVal,
           password: passwordVal,
